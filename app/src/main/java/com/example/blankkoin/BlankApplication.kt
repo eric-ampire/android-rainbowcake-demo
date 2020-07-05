@@ -1,7 +1,7 @@
 package com.example.blankkoin
 
 import android.app.Application
-import com.example.blankkoin.ui.UIModule
+import com.example.blankkoin.ui.mainModule
 import org.koin.core.context.startKoin
 
 class BlankApplication : Application() {
@@ -10,7 +10,7 @@ class BlankApplication : Application() {
         super.onCreate()
 
         startKoin {
-            modules(UIModule)
+            modules(mainModule)
         }
     }
 

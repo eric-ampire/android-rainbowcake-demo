@@ -2,7 +2,7 @@ package com.example.blankkoin
 
 import android.os.Bundle
 import co.zsmb.rainbowcake.navigation.SimpleNavActivity
-import com.example.blankkoin.ui.blank.BlankFragment
+import com.example.blankkoin.ui.user.UserFragment
 
 class MainActivity : SimpleNavActivity() {
 
@@ -11,8 +11,7 @@ class MainActivity : SimpleNavActivity() {
         setContentView(R.layout.activity_main)
 
         if (savedInstanceState == null) {
-            navigator.add(BlankFragment())
+            navigator.add(UserFragment())
         }
     }
-
 }
