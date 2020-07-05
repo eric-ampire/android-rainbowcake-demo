@@ -32,7 +32,7 @@ class UserFragment : RainbowCakeFragment<UserViewState, UserViewModel>() {
             is UserReady -> {
                 viewFlipper.displayedChild = 1
 
-                tvUserLogin.text = viewState.data.login
+                tvUserLogin.text = viewState.data.name
                 ivUserProfile.load(viewState.data.avatar_url) {
                     crossfade(true)
                     placeholder(android.R.color.darker_gray)
